@@ -1,100 +1,56 @@
-# \# SQL Data Analysis
+# SQL Data Analysis
 
-# 
+This project contains SQL scripts designed to perform data analysis on sales and customer datasets within a Data Warehouse structure.  
+The main goal is to generate reports and metrics that can be used in Business Intelligence (BI) scenarios.
 
-# This project contains SQL scripts designed to perform data analysis on sales and customer datasets within a Data Warehouse structure.  
+---
 
-# The main goal is to generate reports and metrics that can be used in Business Intelligence (BI) scenarios.
+## 📂 Project Structure
+sql_data_analysis/
+├── category_sales_contribution.sql # Category-wise total sales and percentage contribution
+├── customer_metrics_report.sql # Customer metrics, age groups, and segmentation analysis
+├── customer_segments_by_spending.sql # Customer segmentation based on spending behavior
+├── monthly_running_sales.sql # Monthly and cumulative sales report
+├── monthly_sales_report.sql # Monthly sales summary
+├── product_price_segments.sql # Number of products by price range
+├── yearly_product_performance.sql # Yearly performance analysis of products
+└── datasets/ # Datasets used in the analysis
 
-# 
+---
+## 📊 Analysis & Reports
 
-# \## 📂 Project Structure
+### **1. Sales Analysis**
+- Monthly total sales
+- Cumulative sales trends
+- Sales contribution by category
+- Product distribution by price segments
 
-# sql\_data\_analysis/
+### **2. Customer Analysis**
+- Customer distribution by age group
+- VIP / Regular / New segmentation
+- Average Order Value (AOV) and average monthly spend
 
-# ├── category\_sales\_contribution.sql # Category-wise total sales and percentage contribution
+### **3. Product Performance Analysis**
+- Year-over-year sales changes
+- Above/Below average sales classification
+- Annual performance comparisons
 
-# ├── customer\_metrics\_report.sql # Customer metrics, age groups, and segmentation analysis
+---
 
-# ├── customer\_segments\_by\_spending.sql # Customer segmentation based on spending behavior
+## 📂 Dataset
+- **Folder**: `datasets/`
+- **Example Data**: Sales, customer, and product tables
+- **Schema**:
+  - **fact_sales**: order details (date, product, customer, sales amount)
+  - **dim_products**: product details (category, price, name)
+  - **dim_customers**: customer details (age, name, customer number)
 
-# ├── monthly\_running\_sales.sql # Monthly and cumulative sales report
+> **Note:** No real data is used; analyses are performed on sample or synthetic datasets.
 
-# ├── monthly\_sales\_report.sql # Monthly sales summary
+---
 
-# ├── product\_price\_segments.sql # Number of products by price range
-
-# ├── yearly\_product\_performance.sql # Yearly performance analysis of products
-
-# └── datasets/ # Datasets used in the analysis
-
-# 
-
-
-
-# 
-
-# \## 📊 Analysis \& Reports
-
-# 
-
-# 1\. \*\*Sales Analysis\*\*
-
-# &nbsp;  - Monthly total sales
-
-# &nbsp;  - Cumulative sales trends
-
-# &nbsp;  - Sales contribution by category
-
-# &nbsp;  - Product distribution by price segments
-
-# 
-
-# 2\. \*\*Customer Analysis\*\*
-
-# &nbsp;  - Customer distribution by age group
-
-# &nbsp;  - VIP / Regular / New segmentation
-
-# &nbsp;  - Average Order Value (AOV) and average monthly spend
-
-# 
-
-# 3\. \*\*Product Performance Analysis\*\*
-
-# &nbsp;  - Year-over-year sales changes
-
-# &nbsp;  - Above/Below average sales classification
-
-# &nbsp;  - Annual performance comparisons
-
-# 
-
-# \## 📂 Dataset
-
-# \- \*\*Folder\*\*: `datasets/`
-
-# \- \*\*Example Data\*\*: Sales, customer, and product tables
-
-# \- \*\*Schema\*\*:
-
-# &nbsp; - \*\*fact\_sales\*\*: order details (date, product, customer, sales amount)
-
-# &nbsp; - \*\*dim\_products\*\*: product details (category, price, name)
-
-# &nbsp; - \*\*dim\_customers\*\*: customer details (age, name, customer number)
-
-# 
-
-# > Note: No real data is used; analyses are performed on sample or synthetic datasets.
-
-# 
-
-# \## 🚀 Usage
-
-# 1\. Open the `.sql` files in SQL Server Management Studio (SSMS) or a compatible SQL editor.
-
-# 2\. Run the queries on the respective database schema.
-
-# 3\. Use the results for reporting, data visualization, or Business Intelligence dashboards.
+## 🚀 Usage
+1. Open the `.sql` files in SQL Server Management Studio (SSMS) or a compatible SQL editor.
+2. Run the queries on the respective database schema.
+3. Use the results for reporting, data visualization, or Business Intelligence dashboards.
 
